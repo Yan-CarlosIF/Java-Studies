@@ -1,4 +1,4 @@
-package Codicoes;
+package TiposDeDados;
 
 import java.util.Locale;
 

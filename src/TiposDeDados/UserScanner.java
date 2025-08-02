@@ -1,4 +1,4 @@
-package Codicoes;
+package TiposDeDados;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class UserScanner {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US); // Setar localização do java
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Insira o nome do usuário");
-        String username = scan.nextLine();
+        String username = sc.nextLine();
 
         System.out.println("Insira a idade do usuário");
-        int userAge = scan.nextInt();
+        int userAge = sc.nextInt();
 
         System.out.println("Name = " + username);
         System.out.printf("Age = %d\n", userAge);
@@ -22,5 +22,7 @@ public class UserScanner {
         } else {
             System.out.println("Usuário menor de idade");
         }
+
+        sc.close();
     }
 }
